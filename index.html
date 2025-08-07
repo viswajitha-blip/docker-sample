@@ -1,11 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to NGINX</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+
+    .content {
+      flex: 3;
+      min-width: 300px;
+      padding-right: 2rem;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 200px;
+      background: #eee;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .post {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .post h2 {
+      margin-top: 0;
+    }
+
+    .post p {
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #222;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from a Dockerized NGINX server!!!!!</h1>
-  <h2>this additional is text added to test</h2>
+
+  <header>
+    <h1>Welcome to My Blog</h1>
+    <p>Thoughts, stories and ideas.</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <!-- Blog Post -->
+      <div class="post">
+        <h2>First Blog Post Title</h2>
+        <p><em>August 7, 2025 • by You</em></p>
+        <p>This is a short excerpt of the blog post. Click to read more about the topic, trends, and insights you want to share...</p>
+      </div>
+
+      <div class="post">
+        <h2>Second Blog Post Title</h2>
+        <p><em>August 5, 2025 • by You</em></p>
+        <p>Another great piece of writing here. Add more posts to keep your audience engaged and drive more traffic...</p>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="#">Post One</a></li>
+        <li><a href="#">Post Two</a></li>
+        <li><a href="#">Post Three</a></li>
+      </ul>
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Travel</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
 
